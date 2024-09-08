@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="header.css" />
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<header>
+			<nav
+				class="navbar navbar-expand-lg bg-white z-3 shadow position-sticky top-0"
+				aria-label="Navbar with menu"
+			>
+				<div class="container">
+					<a class="navbar-brand" href="#">
+						<img
+							src="assets/icons/logo.svg"
+							alt="AOA logo"
+							width="120"
+						/>
+					</a>
+					<button
+						class="navbar-toggler collapsed"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarsExample09"
+						aria-controls="navbarsExample09"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="navbar-collapse collapse" id="navbarsExample09">
+						<ul
+							class="navbar-nav m-auto d-flex gap-3 gap-xl-4 mb-2 mb-lg-0"
+						>
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="#"
+									>INICIO</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">AOA</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">¿CÓMO FUNCIONA?</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">SERVICIOS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">TESTIMONIOS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">NOTICIAS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">CONTACTO</a>
+							</li>
+						</ul>
+						<button type="button" class="btn btn-cotizar">
+							Cotizar
+						</button>
+					</div>
+				</div>
+			</nav>
+
+			<div class="container-fluid hero">
+				<div class="hero-banner">
+					<img
+						src="./assets/AOA - Banner principal-18.webp"
+						alt="hero banner bg"
+					/>
+				</div>
+
+				<div class="hero-content">
+					<h1>
+						Encuentra la Agencia de Marketing ideal para tu negocio
+					</h1>
+					<p>
+						Accede a las mejores agencias de marketing digital,
+						certificadas bajo nuestra metodología de resultados,
+						garantizando la excelencia y eficacia
+					</p>
+					<button type="button" class="btn btn-cotizar">
+						Cotizar
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="agency-section">
+				<div class="agency-content">
+					<h1 class="agency-title">AoA</h1>
+					<p class="agency-subtitle">Agency of Agencies</p>
+					<p class="agency-description">
+						En AoA nos preocupamos de conectar a tu empresa con
+						agencias de marketing digital que cumplen con los más
+						altos estándares de excelencia y efectividad.
+					</p>
+					<p class="agency-description">
+						Nos aseguramos de que tu negocio acceda a las
+						herramientas y estrategias más innovadoras para
+						maximizar el retorno de inversión y alcanzar tus
+						objetivos comerciales en el competitivo mercado digital.
+					</p>
+				</div>
+			</section>
+
+			<section class="container how-it-works">
+				<h2 class="section-title">¿Cómo Funciona AoA?</h2>
+				<p class="section-subtitle">
+					Te lo contamos con estos tres simples pasos:
+				</p>
+
+				<div class="steps-container">
+					<div class="step-card">
+						<img
+							src="assets/icons/pencil.svg"
+							alt="Formulario Icon"
+							class="step-icon"
+						/>
+						<h3 class="step-title">Completa el formulario:</h3>
+						<p class="step-description">
+							Cuéntanos sobre tu proyecto y necesidades de
+							marketing.
+						</p>
+					</div>
+
+					<!-- Arrow SVG between steps -->
+					<svg
+						class="step-arrow"
+						xmlns="http://www.w3.org/2000/svg"
+						width="196.698"
+						height="39.158"
+						viewBox="0 0 196.698 39.158"
+					>
+						<g
+							id="Grupo_119"
+							data-name="Grupo 119"
+							transform="translate(-433.108 -855.057)"
+						>
+							<path
+								id="Trazado_138"
+								data-name="Trazado 138"
+								d="M434.5,886.3s96.959-67.735,187.5,0"
+								fill="none"
+								stroke="#20bed3"
+								stroke-linecap="round"
+								stroke-width="2"
+								stroke-dasharray="5 7"
+							/>
+							<path
+								id="Icon_ionic-ios-arrow-forward"
+								data-name="Icon ionic-ios-arrow-forward"
+								d="M16.258,12.468,11.51,7.723a.893.893,0,0,1,0-1.267.9.9,0,0,1,1.27,0l5.38,5.376a.9.9,0,0,1,.026,1.237l-5.4,5.414a.9.9,0,1,1-1.27-1.267Z"
+								transform="matrix(0.819, 0.574, -0.574, 0.819, 618.27, 868.295)"
+								fill="#20bed3"
+							/>
+						</g>
+					</svg>
+
+					<div class="step-card">
+						<img
+							src="assets/icons/share.svg"
+							alt="Agencia Perfecta Icon"
+							class="step-icon"
+						/>
+						<h3 class="step-title">
+							Nosotros encontramos la Agencia Perfecta:
+						</h3>
+						<p class="step-description">
+							Seleccionamos la agencia certificada que mejor se
+							adapta a tus requerimientos.
+						</p>
+					</div>
+
+					<!-- Arrow SVG between steps -->
+					<svg
+						class="step-arrow"
+						xmlns="http://www.w3.org/2000/svg"
+						width="196.698"
+						height="39.158"
+						viewBox="0 0 196.698 39.158"
+					>
+						<g
+							id="Grupo_119"
+							data-name="Grupo 119"
+							transform="translate(-433.108 -855.057)"
+						>
+							<path
+								id="Trazado_138"
+								data-name="Trazado 138"
+								d="M434.5,886.3s96.959-67.735,187.5,0"
+								fill="none"
+								stroke="#20bed3"
+								stroke-linecap="round"
+								stroke-width="2"
+								stroke-dasharray="5 7"
+							/>
+							<path
+								id="Icon_ionic-ios-arrow-forward"
+								data-name="Icon ionic-ios-arrow-forward"
+								d="M16.258,12.468,11.51,7.723a.893.893,0,0,1,0-1.267.9.9,0,0,1,1.27,0l5.38,5.376a.9.9,0,0,1,.026,1.237l-5.4,5.414a.9.9,0,1,1-1.27-1.267Z"
+								transform="matrix(0.819, 0.574, -0.574, 0.819, 618.27, 868.295)"
+								fill="#20bed3"
+							/>
+						</g>
+					</svg>
+
+					<div class="step-card">
+						<img
+							src="assets/icons/3starbuilding.svg"
+							alt="Resultados Icon"
+							class="step-icon"
+						/>
+						<h3 class="step-title">Obtén resultados:</h3>
+						<p class="step-description">
+							Trabaja con una agencia que garantiza resultados
+							medibles, certificada bajo nuestra metodología de
+							resultados.
+						</p>
+					</div>
+				</div>
+
+				<a href="#start" class="btn btn-cotizar mt-5">¡Empieza ya!</a>
+			</section>
+
+			<section class="container service-section my-5">
+				<h1 class="service-title">Soluciones Integrales para tu Estrategia de Marketing</h1>
+				<p class="service-subtitle">Explora nuestros servicios a través de nuestras agencias partners, certificadas para asegurar la máxima eficacia</p>
+				
+				<div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-md-3 mb-4">
+									<div class="service-card">
+										<div class="service-icon">&#9660;</div>
+										<h3 class="service-card-title">1. Generación y gestión de Leads</h3>
+										<button class="btn btn-custom">Saber más</button>
+									</div>
+								</div>
+								<div class="col-md-3 mb-4">
+									<div class="service-card">
+										<div class="service-icon">&#60;/&#62;</div>
+										<h3 class="service-card-title">2. Optimización Web</h3>
+										<button class="btn btn-custom">Saber más</button>
+									</div>
+								</div>
+								<div class="col-md-3 mb-4">
+									<div class="service-card">
+										<div class="service-icon">&#128200;</div>
+										<h3 class="service-card-title">3. Inteligencia y Análisis</h3>
+										<button class="btn btn-custom">Saber más</button>
+									</div>
+								</div>
+								<div class="col-md-3 mb-4">
+									<div class="service-card">
+										<div class="service-icon">&#128187;</div>
+										<h3 class="service-card-title">4. Tecnología Especializada</h3>
+										<button class="btn btn-custom">Saber más</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
+		</main>
+
+		<!-- Boostrap JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
