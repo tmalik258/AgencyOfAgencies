@@ -1,7 +1,3 @@
-main {
-	margin-bottom: -5rem;
-}
-
 /* ------------------		Agency Section Start		---------------------- */
 .agency-section {
 	padding: 50px 20px;
@@ -327,6 +323,16 @@ main {
 	font-size: 1.2em;
 	font-weight: 800;
 }
+
+@media screen and (width < 768px) {
+	.service-content-container .service-content, .service-content-container .service-content:nth-of-type(even) {
+		flex-direction: column-reverse;
+	}
+
+	.service-content-container .service-content:nth-of-type(odd) .service-content-img img {
+		position: static;
+	}
+}
 /* ------------------		Service Content End		---------------------- */
 
 
@@ -376,10 +382,6 @@ main {
 .client-section .client-section-content .client-details p {
 	color: #817F7F;
 }
-
-@media screen and (width ) {
-	
-}
 /* ------------------		Client/Testimonial End		---------------------- */
 
 
@@ -407,10 +409,16 @@ main {
 .articles .article {
 	width: 30%;
 }
+.articles .article .article-img {
+	width: 100%;
+	height: 15rem;
+	overflow: hidden;
+	border-radius: 8px;
+}
 .articles .article img {
 	width: 100%;
-	height: auto;
-	border-radius: 8px;
+	height: 100%;
+	object-fit: cover;
 }
 .articles .btn-cotizar.category {
 	font-family: 'manifold regular';
@@ -433,6 +441,25 @@ main {
 	color: #00183A;
 	font-size: 14px;
 }
+
+@media screen and (width < 768px) {
+	.articles .articles-container {
+		justify-content: initial;
+		scroll-snap-type: x mandatory;
+		scroll-behavior: smooth;
+		overflow-x: auto;
+		gap: 1rem;
+	}
+	
+	.service-slider::-webkit-scrollbar {
+		display: none;
+	}
+	
+	.articles .article {
+		flex: 1 0 100%;
+		scroll-snap-align: center;
+	}
+}
 /* ------------------		Articles End		---------------------- */
 
 
@@ -450,11 +477,11 @@ main {
 	font-size: 2rem;
 	color: #333;
 }
-.qoute-section .arrow {
-	cursor: pointer;
-}
-.qoute-section .arrow:hover path {
-	fill: #1a9cb0;
+
+@media screen and (width < 500px) {
+	.qoute-section .arrow {
+		display: none;
+	}
 }
 /* ------------------		Qoute Section End		---------------------- */
 
@@ -469,6 +496,7 @@ main {
 .email-section .email-section-img:first-of-type {
 	bottom: 5rem;
 	left: 12rem;
+	z-index: -1;
 }
 
 .email-section .email-section-img:nth-of-type(2) {
@@ -486,7 +514,7 @@ main {
 	flex: 1;
 	background-color: #ffffff;
 	border-radius: 20px;
-	padding: 30px;
+	padding: 20px;
 	color: #333;
 }
 
@@ -540,5 +568,22 @@ main {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+@media screen and (width < 1200px) {
+	.email-section .email-section-img:first-of-type {
+		bottom: 7rem;
+		left: 6rem;
+		z-index: -1;
+	}
+}
+
+@media screen and (width < 992px) {
+	.email-section {
+		padding: 1rem;
+	}
+	.email-section .email-section-img {
+		display: none;
+	}
 }
 /* ------------------		Email Section End		---------------------- */
