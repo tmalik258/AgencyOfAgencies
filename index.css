@@ -492,6 +492,11 @@
 	.articles h1 {
 		font-size: 2rem;
 	}
+
+	.articles .ver-mas {
+		float: right;
+		margin-top: initial;
+	}
 }
 /* ------------------		Articles End		---------------------- */
 
@@ -625,6 +630,12 @@
 	}
 	.email-section .email-section-img {
 		display: none;
+	}
+}
+
+@media screen and (width < 500px) {
+	.email-section .checkbox-group {
+		grid-template-columns: 1fr;
 	}
 }
 /* ------------------		Email Section End		---------------------- */
