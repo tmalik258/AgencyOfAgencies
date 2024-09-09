@@ -132,7 +132,7 @@
 
 /* ------------------		Service Start		---------------------- */
 .service-section {
-	background-image: url('assets/AOA\ -\ Fondo\ Servicios\ con\ degradado-29.webp');
+	background-image: url("assets/AOA\ -\ Fondo\ Servicios\ con\ degradado-29.webp");
 	background-size: contain;
 	padding-bottom: 4rem;
 }
@@ -255,7 +255,6 @@
 }
 /* ------------------		Service End		---------------------- */
 
-
 /* ------------------		Service Content Start		---------------------- */
 .service-content-container .service-content {
 	display: flex;
@@ -267,7 +266,10 @@
 	flex-direction: row-reverse;
 }
 
-.service-content-container .service-content:nth-of-type(odd) .service-content-img img {
+.service-content-container
+	.service-content:nth-of-type(odd)
+	.service-content-img
+	img {
 	position: relative;
 	right: 5rem;
 }
@@ -299,7 +301,7 @@
 	display: flex;
 	gap: 1rem;
 	align-items: center;
-	color: #817F7F;
+	color: #817f7f;
 }
 
 .service-content-container .service-content .service-content-details ul li {
@@ -313,32 +315,46 @@
 	padding: 0;
 }
 
-.service-content-container .service-content .service-content-details ul li .item-content {
+.service-content-container
+	.service-content
+	.service-content-details
+	ul
+	li
+	.item-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-.service-content-container .service-content .service-content-details ul li .item-content h3{
+.service-content-container
+	.service-content
+	.service-content-details
+	ul
+	li
+	.item-content
+	h3 {
 	font-size: 1.2em;
 	font-weight: 800;
 }
 
 @media screen and (width < 768px) {
-	.service-content-container .service-content, .service-content-container .service-content:nth-of-type(even) {
+	.service-content-container .service-content,
+	.service-content-container .service-content:nth-of-type(even) {
 		flex-direction: column-reverse;
 	}
 
-	.service-content-container .service-content:nth-of-type(odd) .service-content-img img {
+	.service-content-container
+		.service-content:nth-of-type(odd)
+		.service-content-img
+		img {
 		position: static;
 	}
 }
 /* ------------------		Service Content End		---------------------- */
 
-
 /* ------------------		Client/Testimonial Start		---------------------- */
 .client-section {
-	background-image: url('assets/AOA\ -\ Fondo\ Testimonio-24.webp');
+	background-image: url("assets/AOA\ -\ Fondo\ Testimonio-24.webp");
 	background-size: cover;
 	height: 100vh;
 	width: 100vw;
@@ -366,79 +382,88 @@
 }
 
 .client-section .client-section-content .client-details h2 {
-	color: #20BED3;
+	color: #20bed3;
 	font-size: 1.4em;
 	margin: 0;
 	margin-top: 1rem;
 }
 
 .client-section .client-section-content .client-details h3 {
-	color: #3B3B3B;
+	color: #3b3b3b;
 	font-size: 1.2em;
 	margin: 0;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 .client-section .client-section-content .client-details p {
-	color: #817F7F;
+	color: #817f7f;
 }
 /* ------------------		Client/Testimonial End		---------------------- */
-
 
 /* ------------------		Articles Start		---------------------- */
 .articles {
 	margin-top: 10rem;
 }
+
 .articles h1 {
-	color: #20BED3;
+	color: #20bed3;
 	font-size: 3rem;
 	font-weight: 900;
 	margin-bottom: 3rem;
 }
+
 .articles .ver-mas {
-	color: #20BED3;
+	color: #20bed3;
 	float: right;
 	margin-top: 2rem;
 	font-size: initial;
 }
+
 .articles .articles-container {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 20px;
 }
+
 .articles .article {
 	width: 30%;
 }
+
 .articles .article .article-img {
 	width: 100%;
 	height: 15rem;
 	overflow: hidden;
 	border-radius: 8px;
 }
+
 .articles .article img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
+
 .articles .btn-cotizar.category {
-	font-family: 'manifold regular';
+	font-family: "manifold regular";
 	padding: 0 1.5rem;
 	border-radius: 5px;
 	font-weight: 400;
 	margin-top: 10px;
 }
+
 .articles .article h2 {
-	font-family: 'manifold semi bold';
-	color: #20BED3;
+	font-family: "manifold semi bold";
+	color: #20bed3;
 	font-size: 18px;
 	margin-top: 10px;
 }
+
 .articles .article p {
 	font-size: 14px;
 	color: #666;
 }
+
 .articles .leer-mas {
-	color: #00183A;
+	color: #00183a;
 	font-size: 14px;
 }
 
@@ -450,18 +475,25 @@
 		overflow-x: auto;
 		gap: 1rem;
 	}
-	
+
 	.service-slider::-webkit-scrollbar {
 		display: none;
 	}
-	
+
+	.articles {
+		margin-top: 4rem;
+	}
+
 	.articles .article {
 		flex: 1 0 100%;
 		scroll-snap-align: center;
 	}
+
+	.articles h1 {
+		font-size: 2rem;
+	}
 }
 /* ------------------		Articles End		---------------------- */
-
 
 /* ------------------		Qoute Section Start		---------------------- */
 .qoute-section {
@@ -485,10 +517,16 @@
 }
 /* ------------------		Qoute Section End		---------------------- */
 
-
 /* ------------------		Email Section Start		---------------------- */
 .email-section {
-	background: transparent radial-gradient(closest-side at 50% 50%, #00183A 0%, #001635 77%, #010C1D 100%) 0% 0% no-repeat padding-box;
+	background: transparent
+		radial-gradient(
+			closest-side at 50% 50%,
+			#00183a 0%,
+			#001635 77%,
+			#010c1d 100%
+		)
+		0% 0% no-repeat padding-box;
 	padding: 7rem;
 	z-index: -2;
 }
@@ -518,7 +556,8 @@
 	color: #333;
 }
 
-.email-section .left-column h1, .email-section .right-column  h2 {
+.email-section .left-column h1,
+.email-section .right-column h2 {
 	font-family: "manifold bold";
 	color: #20bed3;
 }
@@ -534,10 +573,12 @@
 
 .email-section .form-group > label {
 	color: #000;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
-.email-section input, .email-section  select, .email-section  textarea {
+.email-section input,
+.email-section select,
+.email-section textarea {
 	width: 100%;
 	padding: 12px 1.5rem;
 	border: 1px solid #20bed3;
