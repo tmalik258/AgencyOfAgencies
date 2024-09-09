@@ -1,3 +1,7 @@
+main {
+	margin-bottom: -5rem;
+}
+
 /* ------------------		Agency Section Start		---------------------- */
 .agency-section {
 	padding: 50px 20px;
@@ -131,6 +135,11 @@
 /* ------------------		How it Works End		---------------------- */
 
 /* ------------------		Service Start		---------------------- */
+.service-section {
+	background-image: url('assets/AOA\ -\ Fondo\ Servicios\ con\ degradado-29.webp');
+	background-size: contain;
+	padding-bottom: 4rem;
+}
 .service-section .service-title {
 	color: #00b8d4;
 	font-size: 2.5rem;
@@ -323,9 +332,16 @@
 
 /* ------------------		Client/Testimonial Start		---------------------- */
 .client-section {
+	background-image: url('assets/AOA\ -\ Fondo\ Testimonio-24.webp');
+	background-size: cover;
 	height: 100vh;
-	overflow: hidden;
+	width: 100vw;
+	/* overflow: hidden; */
 }
+
+/* .client-section .client-banner {
+	width: 100vw;
+} */
 
 .client-section .client-section-content {
 	text-align: center;
@@ -365,3 +381,164 @@
 	
 }
 /* ------------------		Client/Testimonial End		---------------------- */
+
+
+/* ------------------		Articles Start		---------------------- */
+.articles {
+	margin-top: 10rem;
+}
+.articles h1 {
+	color: #20BED3;
+	font-size: 3rem;
+	font-weight: 900;
+	margin-bottom: 3rem;
+}
+.articles .ver-mas {
+	color: #20BED3;
+	float: right;
+	margin-top: 2rem;
+	font-size: initial;
+}
+.articles .articles-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.articles .article {
+	width: 30%;
+}
+.articles .article img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+.articles .btn-cotizar.category {
+	font-family: 'manifold regular';
+	padding: 0 1.5rem;
+	border-radius: 5px;
+	font-weight: 400;
+	margin-top: 10px;
+}
+.articles .article h2 {
+	font-family: 'manifold semi bold';
+	color: #20BED3;
+	font-size: 18px;
+	margin-top: 10px;
+}
+.articles .article p {
+	font-size: 14px;
+	color: #666;
+}
+.articles .leer-mas {
+	color: #00183A;
+	font-size: 14px;
+}
+/* ------------------		Articles End		---------------------- */
+
+
+/* ------------------		Qoute Section Start		---------------------- */
+.qoute-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3rem;
+	padding: 20px;
+	margin-block: 5rem;
+}
+.qoute-section .quote {
+	text-align: center;
+	font-size: 2rem;
+	color: #333;
+}
+.qoute-section .arrow {
+	cursor: pointer;
+}
+.qoute-section .arrow:hover path {
+	fill: #1a9cb0;
+}
+/* ------------------		Qoute Section End		---------------------- */
+
+
+/* ------------------		Email Section Start		---------------------- */
+.email-section {
+	background: transparent radial-gradient(closest-side at 50% 50%, #00183A 0%, #001635 77%, #010C1D 100%) 0% 0% no-repeat padding-box;
+	padding: 7rem;
+	z-index: -2;
+}
+
+.email-section .email-section-img:first-of-type {
+	bottom: 5rem;
+	left: 12rem;
+}
+
+.email-section .email-section-img:nth-of-type(2) {
+	top: 15rem;
+	right: -6rem;
+	z-index: -1;
+}
+
+.email-section .left-column {
+	flex: 1;
+	padding-right: 20px;
+}
+
+.email-section .right-column {
+	flex: 1;
+	background-color: #ffffff;
+	border-radius: 20px;
+	padding: 30px;
+	color: #333;
+}
+
+.email-section .left-column h1, .email-section .right-column  h2 {
+	font-family: "manifold bold";
+	color: #20bed3;
+}
+.email-section .map {
+	margin-top: 20px;
+}
+.email-section .country {
+	margin: 10px 0;
+}
+.email-section .form-group {
+	margin-bottom: 15px;
+}
+
+.email-section .form-group > label {
+	color: #000;
+	margin-bottom: .5rem;
+}
+
+.email-section input, .email-section  select, .email-section  textarea {
+	width: 100%;
+	padding: 12px 1.5rem;
+	border: 1px solid #20bed3;
+	border-radius: 5px;
+	border-radius: 2rem;
+	resize: none;
+}
+.email-section .checkbox-group {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.email-section .checkbox-group label {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.email-section .checkbox-group label .checkbox-content {
+	flex: 1 0 90%;
+}
+
+.email-section .submit-btn {
+	background-color: #20bed3;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/* ------------------		Email Section End		---------------------- */

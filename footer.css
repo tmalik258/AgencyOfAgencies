@@ -1,0 +1,99 @@
+.footer {
+	background-image: url('assets/Grupo\ 206.png');
+	background-size: cover;
+	padding: 40px 0;
+	padding-top: 10rem;
+	color: #fff;
+}
+
+.footer .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	gap: 1.2rem;
+}
+
+.footer-section {
+	flex: 1;
+}
+
+.footer-logo img {
+	max-width: 100px;
+}
+
+.footer-logo h2 {
+	margin: 20px 0;
+	font-size: 20px;
+}
+
+.footer-contact {
+	flex: 2;
+}
+
+.footer-contact p {
+	display: flex;
+	gap: .7rem;
+	flex: 1;
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+
+.footer-social-icons {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.footer-social-icons img {
+	max-width: 20px;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.footer-links a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.footer-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	border-top: 2px solid rgb(255, 255, 255);
+	padding-top: 20px;
+	font-size: 12px;
+}
+
+.footer-bottom p {
+	margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.footer-content {
+		flex-direction: column;
+	}
+
+	.footer-section {
+		margin-bottom: 30px;
+	}
+
+	.footer-links {
+		flex-direction: column;
+		gap: 15px;
+	}
+}

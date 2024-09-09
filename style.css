@@ -3,79 +3,88 @@
 	padding: 0;
 }
 
-
 @font-face {
-	font-family: 'manifold thin';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Thin.otf') format('truetype');
+	font-family: "manifold thin";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Thin.otf") format("truetype");
 	font-weight: 200;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'manifold light';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Light.otf') format('truetype');
+	font-family: "manifold light";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Light.otf") format("truetype");
 	font-weight: 300;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'manifold regular';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Regular.otf') format('truetype');
+	font-family: "manifold regular";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Regular.otf")
+		format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'manifold medium';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Medium.otf') format('truetype');
+	font-family: "manifold medium";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Medium.otf")
+		format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'manifold semi bold';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Demi_Bold.otf') format('truetype');
+	font-family: "manifold semi bold";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Demi_Bold.otf")
+		format("truetype");
 	font-weight: 600;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'manifold bold';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Bold.otf') format('truetype');
+	font-family: "manifold bold";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Bold.otf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'manifold extra bold';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Extra_Bold.otf') format('truetype');
+	font-family: "manifold extra bold";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Extra_Bold.otf")
+		format("truetype");
 	font-weight: 800;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'manifold heavy';
-	src: url('assets/fonts/fonnts.com-Manifold_CF_Heavy.otf') format('truetype');
+	font-family: "manifold heavy";
+	src: url("assets/fonts/fonnts.com-Manifold_CF_Heavy.otf") format("truetype");
 	font-weight: 900;
 	font-style: normal;
 }
 
-
 body {
-	font-family: 'manifold regular';
+	font-family: "manifold regular";
+	overflow-x: hidden;
 }
 
+/* @media (max-width: 768px) {
+	html {
+		overflow-x: hidden;
+	}
+} */
+
 .btn-cotizar {
-	background-color: #20BED3;
+	background-color: #20bed3;
 	padding-inline: 1.5rem;
 	min-width: fit-content;
 	border-radius: 1.2rem;
 	font-size: 1em;
-	font-family: 'manifold bold';
+	font-family: "manifold bold";
 }
 
 .btn-cotizar:hover {
 	background-color: #fff;
-	color: #00183A;
-	border: 1px solid #00183A;
+	color: #00183a;
+	border: 1px solid #00183a;
 }
