@@ -130,50 +130,189 @@
 
 /* ------------------		How it Works End		---------------------- */
 
-
-/* ------------------		How it Works Start		---------------------- */
-.service-title {
+/* ------------------		Service Start		---------------------- */
+.service-section .service-title {
 	color: #00b8d4;
 	font-size: 2.5rem;
 	font-weight: bold;
 	text-align: center;
 	margin-bottom: 1rem;
 }
+
 .service-subtitle {
 	color: #666;
 	text-align: center;
 	max-width: 800px;
 	margin: 0 auto 3rem;
 }
+
+.service-wrapper {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1200px; /* Ensure it's centered and fits well */
+}
+
+.service-slider {
+	display: flex;
+	gap: 2rem;
+	padding: 2rem;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	overflow-x: auto;
+	scroll-snap-align: start;
+}
+
+.service-slider::-webkit-scrollbar {
+	display: none;
+}
+
 .service-card {
+	flex: 0 0 calc(25% - 2rem); /* 4 cards per view */
+	scroll-snap-align: center;
 	background-color: #fff;
 	border-radius: 10px;
 	padding: 2rem;
-	text-align: center;
-	box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-sizing: border-box;
 }
+
 .service-icon {
 	font-size: 2rem;
 	color: #00b8d4;
 	margin-bottom: 1rem;
 }
+
 .service-card-title {
 	font-weight: bold;
+	font-size: 1.45em;
 	margin-bottom: 1rem;
 }
-.btn-custom {
-	background-color: #00b8d4;
-	color: #fff;
-	border: none;
-	padding: 0.5rem 1.5rem;
-	border-radius: 25px;
-}
-.btn-custom:hover {
-	background-color: #0097a7;
-	color: #fff;
-}
-.carousel-control-prev, .carousel-control-next {
+
+.carousel-control-prev,
+.carousel-control-next {
 	width: 5%;
 }
-/* ------------------		How it Works End		---------------------- */
+
+.carousel-control-next {
+	rotate: 180deg;
+	right: -5rem;
+}
+
+.carousel-control-prev {
+	left: -5rem;
+}
+/* ------------------		Service End		---------------------- */
+
+
+/* ------------------		Service Content Start		---------------------- */
+.service-content-container .service-content {
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+.service-content-container .service-content:nth-of-type(even) {
+	flex-direction: row-reverse;
+}
+
+.service-content-container .service-content:nth-of-type(odd) .service-content-img img {
+	position: relative;
+	right: 5rem;
+}
+
+.service-content-container .service-content > div {
+	flex: 1;
+}
+
+.service-content-container .service-content .service-content-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.service-content-container .service-content .service-content-details h2 {
+	font-weight: 700;
+}
+
+.service-content-container .service-content .service-content-details ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 3rem;
+	list-style: none;
+	padding: 0;
+}
+
+.service-content-container .service-content .service-content-details ul li {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	color: #817F7F;
+}
+
+.service-content-container .service-content .service-content-details ul li {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+}
+
+.service-content-container .service-content .service-content-details ul li * {
+	margin: 0;
+	padding: 0;
+}
+
+.service-content-container .service-content .service-content-details ul li .item-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.service-content-container .service-content .service-content-details ul li .item-content h3{
+	font-size: 1.2em;
+	font-weight: 800;
+}
+/* ------------------		Service Content End		---------------------- */
+
+
+/* ------------------		Client/Testimonial Start		---------------------- */
+.client-section {
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.client-section .client-section-content {
+	text-align: center;
+	max-width: 45rem;
+	color: #fff;
+}
+
+.client-section .client-section-content h1 {
+	font-weight: 900;
+}
+
+.client-section .client-section-content .client-details {
+	background-color: #fff;
+	text-align: start;
+	margin-top: 2rem;
+}
+
+.client-section .client-section-content .client-details h2 {
+	color: #20BED3;
+	font-size: 1.4em;
+	margin: 0;
+	margin-top: 1rem;
+}
+
+.client-section .client-section-content .client-details h3 {
+	color: #3B3B3B;
+	font-size: 1.2em;
+	margin: 0;
+	margin-bottom: .5rem;
+}
+
+.client-section .client-section-content .client-details p {
+	color: #817F7F;
+}
+/* ------------------		Client/Testimonial End		---------------------- */

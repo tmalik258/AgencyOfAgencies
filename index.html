@@ -15,13 +15,14 @@
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="header.css" />
+		<link rel="stylesheet" href="nav.css" />
+		<link rel="stylesheet" href="hero.css" />
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
-		<header>
+		<header class="sticky-top">
 			<nav
-				class="navbar navbar-expand-lg bg-white z-3 shadow position-sticky top-0"
+				class="navbar navbar-expand-lg bg-white z-3 shadow"
 				aria-label="Navbar with menu"
 			>
 				<div class="container">
@@ -81,30 +82,26 @@
 					</div>
 				</div>
 			</nav>
-
-			<div class="container-fluid hero">
-				<div class="hero-banner">
-					<img
-						src="./assets/AOA - Banner principal-18.webp"
-						alt="hero banner bg"
-					/>
-				</div>
-
-				<div class="hero-content">
-					<h1>
-						Encuentra la Agencia de Marketing ideal para tu negocio
-					</h1>
-					<p>
-						Accede a las mejores agencias de marketing digital,
-						certificadas bajo nuestra metodología de resultados,
-						garantizando la excelencia y eficacia
-					</p>
-					<button type="button" class="btn btn-cotizar">
-						Cotizar
-					</button>
-				</div>
-			</div>
 		</header>
+
+		<div class="container-fluid hero">
+			<div class="hero-banner">
+				<img
+					src="./assets/AOA - Banner principal-18.webp"
+					alt="hero banner bg"
+				/>
+			</div>
+
+			<div class="hero-content">
+				<h1>Encuentra la Agencia de Marketing ideal para tu negocio</h1>
+				<p>
+					Accede a las mejores agencias de marketing digital,
+					certificadas bajo nuestra metodología de resultados,
+					garantizando la excelencia y eficacia
+				</p>
+				<button type="button" class="btn btn-cotizar">Cotizar</button>
+			</div>
+		</div>
 
 		<main>
 			<section class="agency-section">
@@ -245,52 +242,890 @@
 			</section>
 
 			<section class="container service-section my-5">
-				<h1 class="service-title">Soluciones Integrales para tu Estrategia de Marketing</h1>
-				<p class="service-subtitle">Explora nuestros servicios a través de nuestras agencias partners, certificadas para asegurar la máxima eficacia</p>
-				
-				<div id="serviceCarousel" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<div class="row">
-								<div class="col-md-3 mb-4">
-									<div class="service-card">
-										<div class="service-icon">&#9660;</div>
-										<h3 class="service-card-title">1. Generación y gestión de Leads</h3>
-										<button class="btn btn-custom">Saber más</button>
-									</div>
-								</div>
-								<div class="col-md-3 mb-4">
-									<div class="service-card">
-										<div class="service-icon">&#60;/&#62;</div>
-										<h3 class="service-card-title">2. Optimización Web</h3>
-										<button class="btn btn-custom">Saber más</button>
-									</div>
-								</div>
-								<div class="col-md-3 mb-4">
-									<div class="service-card">
-										<div class="service-icon">&#128200;</div>
-										<h3 class="service-card-title">3. Inteligencia y Análisis</h3>
-										<button class="btn btn-custom">Saber más</button>
-									</div>
-								</div>
-								<div class="col-md-3 mb-4">
-									<div class="service-card">
-										<div class="service-icon">&#128187;</div>
-										<h3 class="service-card-title">4. Tecnología Especializada</h3>
-										<button class="btn btn-custom">Saber más</button>
-									</div>
-								</div>
+				<h1 class="service-title">
+					Soluciones Integrales para tu Estrategia de Marketing
+				</h1>
+				<p class="service-subtitle">
+					Explora nuestros servicios a través de nuestras agencias
+					partners, certificadas para asegurar la máxima eficacia
+				</p>
+
+				<div class="service-wrapper">
+					<div class="service-slider">
+						<div class="service-card shadow" id="slide-1">
+							<div class="service-icon">
+								<img
+									src="assets/icons/funnel.svg"
+									alt="funnel leads"
+									class="img-fluid"
+								/>
 							</div>
+							<h3 class="service-card-title">
+								1. Generación y gestión de Leads
+							</h3>
+							<button class="btn btn-cotizar">Saber más</button>
+						</div>
+						<div class="service-card shadow" id="slide-2">
+							<div class="service-icon">
+								<img
+									src="assets/icons/web.svg"
+									alt="web browser"
+									class="img-fluid"
+								/>
+							</div>
+							<h3 class="service-card-title">
+								2. Optimización Web
+							</h3>
+							<button class="btn btn-cotizar">Saber más</button>
+						</div>
+						<div class="service-card shadow" id="slide-3">
+							<div class="service-icon">
+								<img
+									src="assets/icons/analysis.svg"
+									alt="analysis"
+									class="img-fluid"
+								/>
+							</div>
+							<h3 class="service-card-title">
+								3. Inteligencia y Análisis
+							</h3>
+							<button class="btn btn-cotizar">Saber más</button>
+						</div>
+						<div class="service-card shadow" id="slide-4">
+							<div class="service-icon">
+								<img
+									src="assets/icons/technology.svg"
+									alt="technology"
+									class="img-fluid"
+								/>
+							</div>
+							<h3 class="service-card-title">
+								4. Tecnología Especializada
+							</h3>
+							<button class="btn btn-cotizar">Saber más</button>
+						</div>
+						<div class="service-card shadow" id="slide-5">
+							<div class="service-icon">
+								<img
+									src="assets/icons/technology.svg"
+									alt="technology"
+									class="img-fluid"
+								/>
+							</div>
+							<h3 class="service-card-title">
+								5. Tecnología Especializada
+							</h3>
+							<button class="btn btn-cotizar">Saber más</button>
+						</div>
+						<div class="service-card shadow" id="slide-6">
+							<div class="service-icon">
+								<img
+									src="assets/icons/technology.svg"
+									alt="technology"
+									class="img-fluid"
+								/>
+							</div>
+							<h3 class="service-card-title">
+								6. Tecnología Especializada
+							</h3>
+							<button class="btn btn-cotizar">Saber más</button>
 						</div>
 					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#serviceCarousel" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<a
+						class="carousel-control-prev"
+						type="button"
+						data-bs-slide="prev"
+					>
+						<img
+							src="assets/icons/left-arrow.svg"
+							alt="left arrow icon"
+							class="img-fluid"
+						/>
 						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#serviceCarousel" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					</a>
+					<a
+						class="carousel-control-next"
+						type="button"
+						data-bs-slide="next"
+					>
+						<img
+							src="assets/icons/left-arrow.svg"
+							alt="right arrow icon"
+							class="img-fluid"
+						/>
 						<span class="visually-hidden">Next</span>
-					</button>
+					</a>
+				</div>
+
+				<div class="service-content-container">
+					<div class="service-content">
+						<div class="service-content-img">
+							<img
+								src="assets/AOA - Imagenes Servicios-20.webp"
+								alt=""
+							/>
+						</div>
+						<div class="service-content-details">
+							<h2>
+								1. Servicio de generación y gestión de Leads
+							</h2>
+							<ul>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Suministro de Clientes Potenciales:
+										</h3>
+										<p>Generación de leads</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>CRM:</h3>
+										<p>Implementación y gestión de CRM</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Generación de ventas en ecommerce
+										</h3>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service-content">
+						<div class="service-content-img">
+							<img
+								src="assets/AOA - Imagenes Servicios-22.webp"
+								alt=""
+							/>
+						</div>
+						<div class="service-content-details">
+							<h2>2. Servicio de Optimización de sitios web</h2>
+							<ul>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Mejora de UX y CRO:</h3>
+										<p>
+											Evaluación y auditoría de KPIs y
+											métricas de marketing
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Mejora de rendimiento web para
+											performance:
+										</h3>
+										<p>
+											Asesoría y apoyo en la adopción de
+											nuevas tecnologías
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service-content">
+						<div class="service-content-img">
+							<img
+								src="assets/AOA - Imagenes Servicios-23.webp"
+								alt=""
+							/>
+						</div>
+						<div class="service-content-details">
+							<h2>3. Servicios de Inteligencia y Análisis</h2>
+							<ul>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Tecnología de inteligencia de
+											marketing:
+										</h3>
+										<p>
+											Herramientas y plataformas para la
+											analítica y optimización de campañas
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Auditoría de mediciones y métricas:
+										</h3>
+										<p>
+											Evaluación y auditoría de KPIs y
+											métricas de marketing
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Análisis de Resultados:</h3>
+										<p>
+											Análisis avanzado de resultados de
+											campañas y estrategias de marketing.
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service-content">
+						<div class="service-content-img">
+							<img
+								src="assets/AOA - Imagenes Servicios-21.webp"
+								alt=""
+							/>
+						</div>
+						<div class="service-content-details">
+							<h2>4. Servicios Tecnológicos Especializados</h2>
+							<ul>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Tecnología de extracción de datos
+											(ETL):
+										</h3>
+										<p>
+											Soluciones avanzadas para la
+											extracción, transformación y carga
+											de datos
+										</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Gestión de Cambio para
+											Implementación de Tecnología:
+										</h3>
+										<p>
+											Asesoría y apoyo en la adopción de
+											nuevas tecnologías
+										</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service-content">
+						<div class="service-content-img">
+							<img
+								src="assets/AOA - Imagenes Servicios-24.webp"
+								alt=""
+							/>
+						</div>
+						<div class="service-content-details">
+							<h2>5. Servicio de Branding: Imagen y Diseño</h2>
+							<ul>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Comunicaciones estratégicas</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Branding</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Merchandising</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Diseño y desarrollo audiovisual</h3>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service-content">
+						<div class="service-content-img">
+							<img
+								src="assets/AOA - Imagenes Servicios-25.webp"
+								alt=""
+							/>
+						</div>
+						<div class="service-content-details">
+							<h2>6. Servicios de Marketing digital</h2>
+							<ul>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Desarrollo de estrategia digital
+										</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Performance de anuncios</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Gestión de RRSS</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Manejo de influencers</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Realización de mailings masivos</h3>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="service-content">
+						<div class="service-content-img">
+							<img
+								src="assets/AOA - Imagenes Servicios-26.webp"
+								alt=""
+							/>
+						</div>
+						<div class="service-content-details">
+							<h2>7. Servicio de Activaciones de Marca</h2>
+							<ul>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Realización de seminarios</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Eventos corporativos</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>
+											Generación de spots publiciarios
+										</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Participación en ferias</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>Gestión de embajadores</h3>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="21.794"
+											height="21.794"
+											viewBox="0 0 21.794 21.794"
+										>
+											<path
+												id="Icon_awesome-check-circle"
+												data-name="Icon awesome-check-circle"
+												d="M22.356,11.459a10.9,10.9,0,1,1-10.9-10.9A10.9,10.9,0,0,1,22.356,11.459ZM10.2,17.229l8.085-8.085a.7.7,0,0,0,0-.994l-.994-.994a.7.7,0,0,0-.994,0L9.7,13.749,6.624,10.671a.7.7,0,0,0-.994,0l-.994.994a.7.7,0,0,0,0,.994l4.57,4.57a.7.7,0,0,0,.994,0Z"
+												transform="translate(-0.563 -0.563)"
+												fill="#20bed3"
+											/>
+										</svg>
+									</div>
+									<div class="item-content">
+										<h3>BTL</h3>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mt-5 text-center">
+						<button class="btn btn-cotizar">
+							Cotizar servicios
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="container-fluid client-section d-flex justify-content-center align-items-center position-relative">
+				<div class="client-banner position-absolute top-0 start-0 z-n1">
+					<img
+						class="object-fit-cover w-100 h-100"
+						src="assets/AOA - Fondo Testimonio-24.webp"
+						alt="Testimoniall"
+					/>
+				</div>
+				<div class="client-section-content">
+					<h1>Lo que nuestros clientes dicen</h1>
+					<p>Descubre las perspectivas de nuestro trabajo</p>
+					<div class="client-details rounded-4 p-5">
+						<div class="user-pfp d-flex justify-content-between">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="58.587"
+								height="58.587"
+								viewBox="0 0 58.587 58.587"
+							>
+								<path
+									id="Icon_awesome-user-circle"
+									data-name="Icon awesome-user-circle"
+									d="M29.294.562A29.294,29.294,0,1,0,58.587,29.856,29.289,29.289,0,0,0,29.294.562Zm0,11.339A10.395,10.395,0,1,1,18.9,22.3,10.395,10.395,0,0,1,29.294,11.9Zm0,40.633a22.635,22.635,0,0,1-17.3-8.056,13.17,13.17,0,0,1,11.635-7.064,2.89,2.89,0,0,1,.839.13,15.639,15.639,0,0,0,4.831.815,15.58,15.58,0,0,0,4.831-.815,2.89,2.89,0,0,1,.839-.13A13.17,13.17,0,0,1,46.6,44.479,22.635,22.635,0,0,1,29.294,52.535Z"
+									transform="translate(0 -0.563)"
+									fill="#20bed3"
+								/>
+							</svg>
+							<div class="review-stars">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18.987"
+									height="18.173"
+									viewBox="0 0 18.987 18.173"
+								>
+									<path
+										id="Icon_awesome-star"
+										data-name="Icon awesome-star"
+										d="M9.916.631,7.6,5.33l-5.185.756a1.136,1.136,0,0,0-.628,1.938l3.751,3.655L4.65,16.843a1.135,1.135,0,0,0,1.647,1.2L10.935,15.6l4.638,2.438a1.136,1.136,0,0,0,1.647-1.2l-.887-5.164,3.751-3.655a1.136,1.136,0,0,0-.628-1.938L14.271,5.33,11.953.631a1.137,1.137,0,0,0-2.037,0Z"
+										transform="translate(-1.441 0.001)"
+										fill="#d99d0f"
+									/>
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18.987"
+									height="18.173"
+									viewBox="0 0 18.987 18.173"
+								>
+									<use href="#Icon_awesome-star" />
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18.987"
+									height="18.173"
+									viewBox="0 0 18.987 18.173"
+								>
+									<use href="#Icon_awesome-star" />
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18.987"
+									height="18.173"
+									viewBox="0 0 18.987 18.173"
+								>
+									<use href="#Icon_awesome-star" />
+								</svg>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="18.987"
+									height="18.173"
+									viewBox="0 0 18.987 18.173"
+								>
+									<use href="#Icon_awesome-star" />
+								</svg>
+					
+							</div>
+						</div>
+						<div class="user-details">
+							<h2>Nombre Apellido</h2>
+							<h3>Cargo de empresa</h3>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit. Illo ad doloribus alias quas at atque voluptas
+								minima officia sed provident quidem molestiae
+								deleniti asperiores error, rem totam explicabo
+								magni. At!
+							</p>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -301,5 +1136,7 @@
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 			crossorigin="anonymous"
 		></script>
+
+		<script src="index.js"></script>
 	</body>
 </html>

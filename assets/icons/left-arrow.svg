@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60.928" height="60.928" viewBox="0 0 60.928 60.928">
+  <defs>
+    <filter id="Trazado_115" x="0" y="0" width="60.928" height="60.928" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Icon_feather-arrow-up-circle" data-name="Icon feather-arrow-up-circle" transform="matrix(-1, 0.017, -0.017, -1, 51.125, 47.416)">
+    <g id="Icon_feather-arrow-up-circle-2" data-name="Icon feather-arrow-up-circle" transform="matrix(0.017, -1, 1, 0.017, 0, 39.922)">
+      <g transform="matrix(0, -1, 1, 0, -7.5, 50.43)" filter="url(#Trazado_115)">
+        <path id="Trazado_115-2" data-name="Trazado 115" d="M39.928,19.964A19.964,19.964,0,1,0,19.964,39.928,19.964,19.964,0,0,0,39.928,19.964Z" transform="translate(50.43 7.5) rotate(90)" fill="#fff" stroke="#b2b1b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+      <path id="Trazado_116" data-name="Trazado 116" d="M15.971,0,7.986,7.986,0,0" transform="translate(11.978 19.964)" fill="none" stroke="#b2b1b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Trazado_117" data-name="Trazado 117" d="M0,0V15.971" transform="translate(19.964 11.978)" fill="none" stroke="#b2b1b1" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
