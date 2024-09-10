@@ -356,7 +356,7 @@
 .client-section {
 	background-image: url("assets/AOA\ -\ Fondo\ Testimonio-24.webp");
 	background-size: cover;
-	height: 100vh;
+	height: calc(100vh + 5rem);
 	width: 100vw;
 	/* overflow: hidden; */
 }
