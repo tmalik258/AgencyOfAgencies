@@ -533,19 +533,17 @@
 		)
 		0% 0% no-repeat padding-box;
 	padding: 7rem;
-	/* z-index: -2; */
+	overflow: hidden;
 }
 
 .email-section .email-section-img:first-of-type {
 	bottom: 5rem;
 	left: 12rem;
-	/* z-index: -1; */
 }
 
 .email-section .email-section-img:nth-of-type(2) {
 	top: 15rem;
 	right: -6rem;
-	/* z-index: -1; */
 }
 
 .email-section .left-column {

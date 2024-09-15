@@ -103,4 +103,8 @@
 		flex-direction: column;
 		gap: 15px;
 	}
+
+	.footer-contact a {
+		justify-content: center;
+	}
 }
